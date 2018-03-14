@@ -1,0 +1,42 @@
+'use strict'
+
+console.log('my book store');
+
+
+var gBooks = [{ id: 1, name: 'hello world', price: 54 },
+{ id: 2, name: 'css for beginners', price: 65 },
+{ id: 3, name: 'JS for Ninjas', price: 23 }
+];
+
+
+
+function renderBooks(books) {
+    var booksHtml = books.map(function (book) {
+        return `<tr>
+        <td class=${book.id}>${book.id}</td>
+        <td>${book.name}</td>
+        <td>${book.price}</td>
+        <td><button type="button" class="btn btn-primary btn-default">
+        <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Read
+      </button>
+    <button type="button" class="btn btn-warning btn-default">
+        <span class="glyphicon glyphicon-collapse-up" aria-hidden="true"></span> Update
+      </button>
+    <button type="button" class="btn btn-danger btn-default" onclick="deleteBook(this)">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete
+      </button></td>
+    </tr> `
+    })
+   // booksHtml = booksHtml.join('');
+    document.querySelector('tbody').innerHTML += booksHtml.join('');
+}
+
+function deleteBook(elBookTr) {
+    console.log(elBookTr);
+    elBookTr.classList.add('remove');
+}
+
+renderBooks(gBooks);
+
+
+
