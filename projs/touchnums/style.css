@@ -1,0 +1,23 @@
+.header {
+    text-align: center;
+    background-color: azure;
+    height: 200px;
+    padding:50px;
+}
+
+.tableCell {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    margin: auto;
+}
+
+table{
+    margin: auto;
+    
+}
+
+.clicked {
+    background-color:salmon;
+}

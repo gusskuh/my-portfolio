@@ -25,7 +25,7 @@ var gProjs = [{
   name: "Pop Balloons",
   title: "Pop these balloons",
   desc: "Popping ballons is fun, try to pop all the baloon befoer they all go up to the sky!",
-  url: "projs/popballoons",
+  url: "projs/popballons",
   publishedAt: moment("20180225").fromNow(),
   labels: ["keyboard events"]
 
@@ -34,7 +34,7 @@ var gProjs = [{
   name: "Touch the numbers",
   title: "Touch the numbers at the best time",
   desc: "You need to touch the numbers in the right order as fast as you can with your mouse arrow",
-  url: "projs/pguessnums",
+  url: "projs/touchnums",
   publishedAt: moment("20180224").fromNow(),
   labels: ["Matrixes", "keyboard events"]
 
@@ -43,7 +43,7 @@ var gProjs = [{
   name: "What is in the picture",
   title: "Choose the correct line",
   desc: "Pick to right sentence for each picture. If you guess wrong you loose 10 points. Lets see what is your best score!",
-  url: "projs/whatinpic",
+  url: "projs/Whatinpic",
   publishedAt: moment("20180306").fromNow(),
   labels: ["keyboard events", "modal", 'flex']
 
@@ -120,7 +120,7 @@ function renderModals(projs) {
     strHtml += '<div class="modal-body">'
     strHtml += '<h2>' + projs[i].name + '</h2>'
     strHtml += ' <p class="item-intro text-muted">' + projs[i].title + '</p>'
-    strHtml += '<a href="../' + projs[i].id + '/index.html" target= "#"><img class="img-fluid d-block mx-auto" src="img/portfolio/' + projs[i].name + '.jpg" alt=""></a>'
+    strHtml += '<a href="'+projs[i].url+'/index.html" target= "#"><img class="img-fluid d-block mx-auto" src="img/portfolio/' + projs[i].name + '.jpg" alt=""></a>'
     strHtml += '<p>' + projs[i].desc + '</p>'
     strHtml += '<ul class="list-inline">'
     strHtml += ' <li>Published: ' + projs[i].publishedAt + '</li><li>Client: Coding Academy</li><li>Category: Student Projects</li></ul>'

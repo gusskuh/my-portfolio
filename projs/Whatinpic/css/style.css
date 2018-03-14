@@ -1,0 +1,124 @@
+* {
+    border: 1px solid red;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    /* opacity: 0.2;
+    z-index: 10; */
+}
+
+.container {
+    margin: 0 auto;
+    width: 700px;
+    height: 1000px;
+    /* border: 1px solid rgb(252, 3, 3);     */
+}
+
+.right {
+ right: 0;
+}
+
+img {
+    display: block;
+    max-width:530px;
+    max-height:295px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    border-radius: 5%;
+    margin-top: 20px;
+  }
+
+  img:hover{
+    cursor: pointer;
+      
+  }
+
+  .answers {
+      margin-top:20px;
+      /* border: 1px solid red; */
+      text-align: center;
+      padding: 10px 20px 10px 20px;
+      
+  }
+  h2 {
+    border: 1px solid greenyellow;
+    padding: 15px 40px 15px 40px;
+    border-radius: 10%;
+    
+    
+  }
+
+  h2:hover {
+      background-color: azure;
+      cursor: pointer;
+      
+  }
+
+  .wrong:hover{
+    background-color: red;
+  }
+
+  .wrong{
+      background-color: red;
+      /* transition: background 10s; */
+  }
+
+  .bg-modal{
+      top:0;
+      left:0;
+      width:100%;
+      height: 100%;
+      position:fixed;
+      background-color: rgba(5, 5, 5,0.3); 
+      /* visibility: hidden; */
+  }
+
+  .modal-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto 0;
+    background-color: red;
+    width: 500px;
+    height:500px;
+    padding: 25px;
+    border-radius: 100%;
+    box-shadow: 1em;
+    text-align:center;
+  }
+
+  .hidden {
+      visibility: hidden;
+  }
+
+  button {
+    display:block;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  button:hover {background-color: #3e8e41}
+  
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  /* .right{
+    background-color: rgb(47, 65, 226);
+    transition: background 1s;
+  } */
+  
+  
+

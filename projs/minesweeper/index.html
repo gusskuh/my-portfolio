@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mine Sweeper!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class = "header">
+        <h1>Hello Mine Sweeper!</h1>
+        <h3>Lets see what you made of!</h3>
+        <div>
+                <input type="radio"  name="difficulty"  onclick="gameInit(4,2)">
+                <label >Easy</label>
+    
+                <input type="radio"  name="difficulty"  onclick="gameInit(6,5)">
+                <label >Hard</label>
+    
+                <input type="radio"  name="difficulty"  onclick="gameInit(8,16)">
+                <label >Extreme</label>
+                <button onclick="gameInit(6,5)">Reset Game!</button>
+
+
+
+
+            </div>
+        <h2>Your Time!</h2>
+        <div>
+            <h4>Flags Left</h4>
+            <h5></h5>
+        </div>
+    </div>
+    <table>
+        <tbody class="board">.</tbody>
+    </table>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- <script defer src="/static/fontawesome/fontawesome-all.js"></script> -->
+</body>
+
+</html>

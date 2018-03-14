@@ -1,0 +1,88 @@
+* {
+    border: 1px solid red;
+}
+
+body {
+   /* background-color: rgb(231, 238, 234); */
+    background-image: url('https://orig00.deviantart.net/1972/f/2005/108/7/8/minesweeper.gif');
+    opacity: 0.95;
+}
+
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    text-align: center;
+    border-radius: 25%;
+    
+    font-size: 30;
+}
+
+/* td:hover {
+    background-color: blue;
+} */
+
+.flipped {
+    background-color:white;
+}
+
+.flippedBomb {
+    background-color:red;
+}
+
+.flaggedWithBomb {
+     
+    background-image: url('https://vignette.wikia.nocookie.net/mysingingmonsters/images/2/24/Red-x.png/revision/latest?cb=20171113115328');
+    
+    background-size:cover;
+}
+
+
+.flagged {
+     
+   
+    size: 10px;
+        height: 40px;
+        width: 40px;
+        content:url(http://www.freepsdfile.com/wp-content/uploads/2012/01/Red-Flag-Icon-PSD.png);   
+}
+
+h3 {
+font-size: 2rem;
+}
+
+h5 {
+    display: inline-block;
+}
+
+h4 {
+    display: inline-block
+}
+
+.header {
+    background-color: goldenrod;
+    border: 1px solid black;
+    text-align: center;
+    opacity: 0.8;
+    width: 2000px;
+    
+}
+
+table {
+    margin: auto;
+    
+}
+
+button {
+
+    border-radius: 25%;
+
+    
+}
+
+
+
+

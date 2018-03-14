@@ -1,0 +1,32 @@
+
+
+.balloon {
+    width: 50px;
+    height: 65px;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    /*bottom: 0;*/
+}
+
+.balloon1 {
+background-color: red;
+left: 150px;
+}
+
+.balloon2 {
+background-color: greenyellow;
+left: 50px;
+}
+
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+  }
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+  }
